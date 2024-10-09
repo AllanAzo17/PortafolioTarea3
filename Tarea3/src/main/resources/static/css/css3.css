@@ -1,0 +1,149 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 8, 2024, 8:49:41 PM
+    Author     : User
+*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; 
+    line-height: 1.6;
+    padding-top: 120px; 
+    background-color: #E0F7FA; 
+    color: #024070; 
+}
+
+.header {
+    background-color: #024070; 
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold; 
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+}
+
+.nav-menu-link:hover {
+    background-color: #076AF0; 
+    transition: 0.5s;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+    color: #024070; 
+    margin: 20px 0; 
+    padding: 10px; 
+    background-color: DodgerBlue; 
+}
+
+h2 {
+    text-align: center;
+    color: #024070; 
+    margin: 20px 0; 
+}
+
+p {
+    font-size: 18px;
+    margin: 20px auto;
+    max-width: 800px; 
+    line-height: 1.8;
+    text-align: center; 
+}
+
+form {
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+label {
+    font-weight: bold; 
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+input[type="submit"] {
+    background-color: #076AF0; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+input[type="submit"]:hover {
+    background-color: #024070; 
+    transition: background-color 0.3s; 
+}
+
+
+img {
+    display: block;
+    margin: 20px auto; 
+    border-radius: 8px;
+    border: 4px solid #024070; 
+    max-width: 90%; 
+}
+
+a {
+    color: #076AF0; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

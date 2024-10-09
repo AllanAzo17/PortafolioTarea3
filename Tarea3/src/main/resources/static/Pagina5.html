@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+         <nav class="Página web"> 
+            <a href="index.html" class="logo_nav-link">Página de música</a>
+            <link href="css/css5.css" rel="stylesheet" type="text/css"/>
+            
+               <ul class="nav-menu">
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina1.html">Historia de la banda;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina2.html">Suscripción;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina3.html">Mark Foster;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina4.html">Mienbros de la banda;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina5.html">Mercadería;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina6.html">BLOG;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina7.html">Conciertos;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina8.html">Soporte;</a></li>
+              </ul>
+        </nav>
+</header>
+        <h1> El outfit que no te puedes perder</h1>
+        <p> Tenemos más estilos en camino, no te pierdas de la última colección de tu banda favorita, incluye un póster firmado hasta agotar existencias.</p>
+        
+       <script>
+    function ShowMessage(sectionId) {
+        document.getElementById(sectionId).querySelector(".message").innerHTML = "Compra exitosa";
+    }
+</script>
+
+<section id="contenido1">
+    <img src="imagen/Jacket.jpg" alt="Jacket" width="400" height="500" style="display: block; margin: auto;"/>
+    <button onclick="ShowMessage('contenido1')" style="display: block; margin: auto; margin-top: 20px;">Comprar</button>
+    <p class="message" style="text-align: center;"></p> 
+</section>
+
+<section id="contenido2">
+    <img src="imagen/Sueta.jpg" alt="Sueta" width="400" height="500" style="display: block; margin: auto;"/>
+    <button onclick="ShowMessage('contenido2')" style="display: block; margin: auto; margin-top: 20px;">Comprar</button>
+    <p class="message" style="text-align: center;"></p> 
+</section>
+
+<section id="contenido4">
+    <img src="imagen/Camisa.jpg" alt="Camisa" width="360" height="360" style="display: block; margin: auto;"/>
+    <button onclick="ShowMessage('contenido4')" style="display: block; margin: auto; margin-top: 20px;">Comprar</button>
+    <p class="message" style="text-align: center;"></p> 
+</section>
+        
+    </body>
+</html>

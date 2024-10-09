@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>BLOG</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <header class="header">
+         <nav class="Página web"> 
+            <a href="index.html" class="logo_nav-link">Página de música</a>
+            <link href="css/css6.css" rel="stylesheet" type="text/css"/>
+               <ul class="nav-menu">
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina1.html">Historia de la banda;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina2.html">Suscripción;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina3.html">Mark Foster;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina4.html">Mienbros de la banda;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina5.html">Mercadería;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina6.html">BLOG;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina7.html">Conciertos;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina8.html">Soporte;</a></li>
+              </ul>
+        </nav>
+</header>
+        <h2>Mi Blog</h2>
+<img src="imagen/Banda.jpg" alt="Banda" width="500" height="500"/>
+<br>
+<p>Crees que la unión de Sean Cimino afectará el éxito de la banda en los próximos años?</p>
+
+<h3 style="text-align: center">Comentarios</h3>
+<form style="text-align: center" id="commentForm" onsubmit="event.preventDefault(); publicarComentario();">
+    Nombre de usuario: <input type="text" name="username"><br><br>
+    Comentario:<br>
+    <textarea name="comment" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Comentar">
+</form>
+
+<h3 style="text-align: center"> Comentarios del tema</h3>
+<ul style="text-align: center" id="commentList">
+
+</ul>
+
+<script>
+    function verificarCampos(form) {
+        const nombreUsuario = form.querySelector("[name='username']").value.trim();
+        const comentario = form.querySelector("[name='comment']").value.trim();
+        if (!nombreUsuario || !comentario) {
+            alert("Por favor, rellena todos los campos.");
+            return false;
+        }
+        return { nombreUsuario, comentario }; 
+    }
+    function publicarComentario() {
+        const form = document.getElementById("commentForm");
+        const validacion = verificarCampos(form); 
+
+        if (validacion) {
+            const { nombreUsuario, comentario } = validacion;
+            const listaComentarios = document.getElementById("commentList");
+            
+            const nuevoComentario = document.createElement("li");
+            nuevoComentario.innerHTML = `<b>${nombreUsuario}:</b> ${comentario}`;
+            listaComentarios.appendChild(nuevoComentario);
+            form.reset();
+        }
+    }
+</script>
+
+    </body>
+</html>

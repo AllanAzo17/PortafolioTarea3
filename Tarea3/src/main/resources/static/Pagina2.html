@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Página web 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/css2.css" rel="stylesheet" type="text/css"/>
+        <script>
+            
+            function registrarUsuario(event) {                
+                event.preventDefault();             
+                var nombre = document.getElementById("fname").value;
+                var apellido = document.getElementById("lname").value;                
+                if (nombre && apellido) {
+                    console.log("Registro exitoso: " + nombre + " " + apellido); 
+                    alert("Registro exitoso: " + nombre + " " + apellido);
+                } else {
+                    alert("Por favor, ingresa tu nombre y apellido.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header class="header">
+         <nav class="Página web"> 
+            <a href="index.html" class="logo_nav-link">Página de música</a>
+           
+               <ul class="nav-menu">
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina1.html">Historia de la banda;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina2.html">Suscripción;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina3.html">Mark Foster;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina4.html">Mienbros de la banda;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina5.html">Mercadería;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina6.html">BLOG;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina7.html">Conciertos;</a></li>
+                   <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Pagina8.html">Soporte;</a></li>
+              </ul>
+        </nav>
+</header>
+        <h1>Página 2</h1>
+        <p>Suscríbete para enterarte de las últimas novedades</p>
+        <p>
+            Foster the People, la banda del momento te invita a ser parte de su comunidad. Podrás conseguir descuentos exclusivos de su marca, además de participar de los sorteos exclusivos para suscriptores. ¡¿Qué estás esperando?!
+        </p>
+
+        <h2>Registro de cliente para más información</h2>
+        
+        <form onsubmit="registrarUsuario(event)">
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <label>Correo</label><br>
+            <input placeholder="correo@123.com" type="email" name="correo" value="" size="15" /><br>
+            <input type="submit" value="Regístrate">
+        </form>
+
+        <h2>Términos y condiciones para la inscripción</h2>
+        <ul>
+            <li>El servicio ofrece acceso a una biblioteca de música en streaming bajo suscripción mensual o anual. Solo podrás usar el servicio para fines personales y no comerciales.</li>
+            <li>Eres responsable de mantener la confidencialidad de tu cuenta y contraseña. Nos reservamos el derecho de suspender o eliminar cuentas que incumplan los términos.</li>
+            <li>El pago de la suscripción se renueva automáticamente al final de cada ciclo, a menos que canceles antes de la fecha de renovación. No se realizan reembolsos por pagos ya efectuados.</li>
+            <li>Todo el contenido (música, gráficos, logotipos) es propiedad de la plataforma o sus licenciantes. No puedes distribuir, modificar ni reproducir el contenido sin permiso.</li>
+            <li>Está prohibido descargar, compartir o distribuir música sin autorización, así como realizar actividades ilegales que perjudiquen el servicio.</li>
+        </ul>
+
+        <img src="imagen/suscribete.jpg" alt="Foster" width="400" height="350" style="display: block; margin: auto;"/>
+        <img src="imagen/album.jpg" alt="Foster" width="400" height="350" style="display: block; margin: auto;"/>
+    </body>
+</html>
